@@ -1,0 +1,98 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.645
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CP.Lab.Transfer.Common", "CP.Lab.Transfer.Common\CP.Lab.Transfer.Common.csproj", "{F5265EF7-60A5-445A-BDE8-D9AB33CA1945}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CP.Lab.Transfer.Business", "CP.Lab.Transfer.Business\CP.Lab.Transfer.Business.csproj", "{E1B6F42A-CF72-48E5-B442-2F34DE3D56ED}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "CP.Lab.Plugins", "CP.Lab.Plugins", "{7CBF50AD-60D6-4EB5-BBAD-C25D517FF1EB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CP.Lab.Transfer.Plugins.CSV", "CP.Lab.Transfer.Plugins.CSV\CP.Lab.Transfer.Plugins.CSV.csproj", "{15EA5760-BBBC-4D4F-A2D4-DF9307F7AAA7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CP.Lab.Transfer.Plugins.SQLServer", "CP.Lab.Transfer.Plugins.SQLServer\CP.Lab.Transfer.Plugins.SQLServer.csproj", "{6D2996E5-0950-42AE-9037-823E8127EB50}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CP.Lab.Transfer.App", "CP.Lab.Transfer.App\CP.Lab.Transfer.App.csproj", "{782EA5D5-0D08-45DC-A3FB-4E16FFD4AE34}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CP.Lab.Transfer.IoC", "CP.Lab.Transfer.IoC.Unity\CP.Lab.Transfer.IoC.csproj", "{B7B278C0-73D0-44E7-8AB3-BAE2F430DE9F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CP.Lab.Transfer.Plugins.Mail", "CP.Lab.Transfer.Plugins.Mail\CP.Lab.Transfer.Plugins.Mail.csproj", "{33F86B00-20B3-496D-B0A0-46C41BECDA3F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F5265EF7-60A5-445A-BDE8-D9AB33CA1945}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F5265EF7-60A5-445A-BDE8-D9AB33CA1945}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F5265EF7-60A5-445A-BDE8-D9AB33CA1945}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F5265EF7-60A5-445A-BDE8-D9AB33CA1945}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E1B6F42A-CF72-48E5-B442-2F34DE3D56ED}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E1B6F42A-CF72-48E5-B442-2F34DE3D56ED}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E1B6F42A-CF72-48E5-B442-2F34DE3D56ED}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E1B6F42A-CF72-48E5-B442-2F34DE3D56ED}.Release|Any CPU.Build.0 = Release|Any CPU
+		{15EA5760-BBBC-4D4F-A2D4-DF9307F7AAA7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{15EA5760-BBBC-4D4F-A2D4-DF9307F7AAA7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{15EA5760-BBBC-4D4F-A2D4-DF9307F7AAA7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{15EA5760-BBBC-4D4F-A2D4-DF9307F7AAA7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6D2996E5-0950-42AE-9037-823E8127EB50}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6D2996E5-0950-42AE-9037-823E8127EB50}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6D2996E5-0950-42AE-9037-823E8127EB50}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6D2996E5-0950-42AE-9037-823E8127EB50}.Release|Any CPU.Build.0 = Release|Any CPU
+		{782EA5D5-0D08-45DC-A3FB-4E16FFD4AE34}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{782EA5D5-0D08-45DC-A3FB-4E16FFD4AE34}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{782EA5D5-0D08-45DC-A3FB-4E16FFD4AE34}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{782EA5D5-0D08-45DC-A3FB-4E16FFD4AE34}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B7B278C0-73D0-44E7-8AB3-BAE2F430DE9F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B7B278C0-73D0-44E7-8AB3-BAE2F430DE9F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B7B278C0-73D0-44E7-8AB3-BAE2F430DE9F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B7B278C0-73D0-44E7-8AB3-BAE2F430DE9F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{33F86B00-20B3-496D-B0A0-46C41BECDA3F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{33F86B00-20B3-496D-B0A0-46C41BECDA3F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{33F86B00-20B3-496D-B0A0-46C41BECDA3F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{33F86B00-20B3-496D-B0A0-46C41BECDA3F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{15EA5760-BBBC-4D4F-A2D4-DF9307F7AAA7} = {7CBF50AD-60D6-4EB5-BBAD-C25D517FF1EB}
+		{6D2996E5-0950-42AE-9037-823E8127EB50} = {7CBF50AD-60D6-4EB5-BBAD-C25D517FF1EB}
+		{33F86B00-20B3-496D-B0A0-46C41BECDA3F} = {7CBF50AD-60D6-4EB5-BBAD-C25D517FF1EB}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {432B02BA-1BF5-47B5-BA27-5104986F6F55}
+	EndGlobalSection
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 8
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://tfs.codedprojects.com/codedprojects
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = CP.Lab.Transfer.App\\CP.Lab.Transfer.App.csproj
+		SccProjectName1 = CP.Lab.Transfer.App
+		SccLocalPath1 = CP.Lab.Transfer.App
+		SccProjectUniqueName2 = CP.Lab.Transfer.Business\\CP.Lab.Transfer.Business.csproj
+		SccProjectName2 = CP.Lab.Transfer.Business
+		SccLocalPath2 = CP.Lab.Transfer.Business
+		SccProjectUniqueName3 = CP.Lab.Transfer.Common\\CP.Lab.Transfer.Common.csproj
+		SccProjectName3 = CP.Lab.Transfer.Common
+		SccLocalPath3 = CP.Lab.Transfer.Common
+		SccProjectUniqueName4 = CP.Lab.Transfer.Plugins.CSV\\CP.Lab.Transfer.Plugins.CSV.csproj
+		SccProjectTopLevelParentUniqueName4 = CP.Lab.sln
+		SccProjectName4 = CP.Lab.Transfer.Plugins.CSV
+		SccLocalPath4 = CP.Lab.Transfer.Plugins.CSV
+		SccProjectUniqueName5 = CP.Lab.Transfer.Plugins.SQLServer\\CP.Lab.Transfer.Plugins.SQLServer.csproj
+		SccProjectTopLevelParentUniqueName5 = CP.Lab.sln
+		SccProjectName5 = CP.Lab.Transfer.Plugins.SQLServer
+		SccLocalPath5 = CP.Lab.Transfer.Plugins.SQLServer
+		SccProjectUniqueName6 = CP.Lab.Transfer.IoC.Unity\\CP.Lab.Transfer.IoC.csproj
+		SccProjectName6 = CP.Lab.Transfer.IoC.Unity
+		SccLocalPath6 = CP.Lab.Transfer.IoC.Unity
+		SccProjectUniqueName7 = CP.Lab.Transfer.Plugins.Mail\\CP.Lab.Transfer.Plugins.Mail.csproj
+		SccProjectTopLevelParentUniqueName7 = CP.Lab.sln
+		SccProjectName7 = CP.Lab.Transfer.Plugins.Mail
+		SccLocalPath7 = CP.Lab.Transfer.Plugins.Mail
+	EndGlobalSection
+EndGlobal

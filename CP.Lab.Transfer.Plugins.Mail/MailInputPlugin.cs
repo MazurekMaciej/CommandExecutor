@@ -36,13 +36,13 @@ namespace CP.Lab.Transfer.Plugins.Mail
             if (parameters == null)
                 throw new ArgumentNullException(nameof(parameters));
             if (!parameters.ContainsKey("email"))
-                throw new ArgumentException("Missing 'email' output plugin parameter");
+                throw new ArgumentException("Missing 'email' input plugin parameter");
             if (!parameters.ContainsKey("login"))
-                throw new ArgumentException("Missing 'login' output plugin parameter");
+                throw new ArgumentException("Missing 'login' input plugin parameter");
             if (!parameters.ContainsKey("password"))
-                throw new ArgumentException("Missing 'password' output plugin parameter");
+                throw new ArgumentException("Missing 'password' input plugin parameter");
             if (!parameters.ContainsKey("emailSubject"))
-                throw new ArgumentException("Missing 'emailSubject' output plugin parameter");
+                throw new ArgumentException("Missing 'emailSubject' input plugin parameter");
 
             _log.Debug("Initializing output plugin started");
             _log.InfoFormat("Init output plugin started");
@@ -112,15 +112,12 @@ namespace CP.Lab.Transfer.Plugins.Mail
             {
                 /*   var query = SearchQuery.DeliveredAfter(DateTime.Parse("2019-12-12"))
                                            .And SearchQuery.SubjectContains(_emailSubject).And(SearchQuery.Seen);*/
-                // For demo-purposes, accept all SSL certificates
                 client.ServerCertificateValidationCallback = (s, c, h, e) => true;
 
                 client.Connect("imap.gmail.com", 993, SecureSocketOptions.SslOnConnect);
-                //client.AuthenticationMechanisms.Remove("XOAUTH2");
 
                 client.Authenticate(_login, _password);
 
-                // The Inbox folder is always available on all IMAP servers...
                 var inbox = client.Inbox;
                 inbox.Open(FolderAccess.ReadWrite);
                 
@@ -156,8 +153,6 @@ namespace CP.Lab.Transfer.Plugins.Mail
                             }
                             inbox.AddFlags(summary.UniqueId, MessageFlags.Seen, true);
                             return true;
-                            //  ParseHtmlTable(text.ToString());
-                            //XElement table = XElement.Parse(text.ToString());
                         }
                     }
                 }
